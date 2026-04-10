@@ -18,6 +18,9 @@
       color: #fff;
       padding: 2rem;
       text-align: center;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInDown 1s ease forwards;
     }
     section {
       max-width: 900px;
@@ -26,6 +29,8 @@
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
     }
     h2 {
       color: #0d47a1;
@@ -33,6 +38,9 @@
     }
     p {
       margin-bottom: 1rem;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
     }
     .cta {
       text-align: center;
@@ -68,6 +76,18 @@
       height: 100%;
       border: 0;
     }
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .visible {
+      animation: fadeInUp 1s ease forwards;
+    }
   </style>
 </head>
 <body>
@@ -82,7 +102,68 @@
     <p>Si ya tienes página web, pero las ventas no crecen como deberían… probablemente el problema no es tu negocio. El problema es que tu web no está apareciendo donde debería.</p>
   </section>
 
-  <!-- ... resto de secciones del VSL ... -->
+  <section>
+    <h2>Validación del Contexto</h2>
+    <p>Ya invertiste en anuncios. Tu web genera ventas, pero no escala. Hay meses buenos y meses malos. Y en el fondo, sientes que tu página podría rendir mucho más… pero no tienes control real sobre tu flujo de clientes.</p>
+  </section>
+
+  <section>
+    <h2>El Problema Real</h2>
+    <p>El problema no es tu producto ni tu servicio. El problema es que tu web no está apareciendo en las búsquedas clave. Tus clientes ya están buscando lo que vendes, pero tu página no está alineada con cómo buscan ellos. Y mientras tanto, sigues compitiendo pagando anuncios… en vez de posicionarte.</p>
+  </section>
+
+  <section>
+    <h2>Cambio de Perspectiva</h2>
+    <p>No se trata de traer más tráfico. Se trata de aparecer justo en el momento en que alguien ya quiere comprar.</p>
+  </section>
+
+  <section>
+    <h2>Derribando Creencias sobre SEO</h2>
+    <ul>
+      <li><strong>SEO no es solo palabras clave:</strong> Parte entendiendo cómo busca el cliente correcto y cómo está estructurada tu web.</li>
+      <li><strong>SEO no es traer más tráfico:</strong> No me interesa llenarte la web de visitas vacías. Me interesa que llegue gente que realmente está buscando lo que vendes.</li>
+      <li><strong>Si no es rápido, no sirve:</strong> El SEO construye una base que se fortalece con el tiempo.</li>
+      <li><strong>Más tráfico ≠ más ventas:</strong> Hay webs con mucho tráfico y pocas ventas, y otras con menos tráfico pero búsquedas precisas que convierten mejor.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>SEO como Proceso</h2>
+    <p>No trabajamos el SEO como tareas sueltas. Lo trabajamos como un proceso:</p>
+    <ol>
+      <li>Entendemos cómo te busca la gente correcta.</li>
+      <li>Identificamos qué páginas tienen potencial real.</li>
+      <li>Optimizamos estructura, contenido e intención.</li>
+      <li>Construimos visibilidad con sentido.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Métricas</h2>
+    <p>Las métricas importan, pero no para inflar números. Importan como señal de que tu web empieza a aparecer mejor, atraer búsquedas más alineadas y ganar terreno en Google. Lo que buscamos es avance real.</p>
+  </section>
+
+  <section>
+    <h2>Ventaja Estratégica</h2>
+    <p>El SEO es una estrategia de mediano y largo plazo. Requiere meses de trabajo, pero es acumulativa. Y como la mayoría evita hacerlo bien, la competencia real es mucho menor.</p>
+  </section>
+
+  <section>
+    <h2>Expectativas Reales</h2>
+    <p>No es inmediato. Las primeras señales aparecen entre 30 y 60 días. Los resultados más sólidos llegan con meses de consistencia. Es un proceso, no un truco rápido.</p>
+  </section>
+
+  <section>
+    <h2>Micro-Evidencia</h2>
+    <p>Ecommerce que pasan de depender de anuncios a generar tráfico constante desde Google.</p>
+    <p>Negocios de servicios que empiezan a recibir contactos sin invertir todos los días en publicidad.</p>
+    <p>Casos donde el tráfico orgánico se convierte en el canal más rentable.</p>
+  </section>
+
+  <section>
+    <h2>Filtro de Cliente</h2>
+    <p>Esto no es para quien no vende. No es para quien busca resultados rápidos. Es para negocios que ya están vendiendo y quieren escalar con un canal estable.</p>
+  </section>
 
   <section>
     <h2>Video Explicativo</h2>
@@ -101,6 +182,22 @@
     <p>Si quieres ver si esto aplica a tu web, puedes agendar una auditoría SEO. Revisamos tu caso y vemos si tiene sentido trabajar esto.</p>
     <a href="/auditoria-seo">Agendar Auditoría</a>
   </section>
+
+  <script>
+    // Scroll reveal simple
+    const sections = document.querySelectorAll("section");
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if(boxTop < triggerBottom){
+          sec.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
 
 </body>
 </html>
