@@ -5,199 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VSL - Posicionamiento en Google Chile</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: #0d47a1;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: fadeInDown 1s ease forwards;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    h2 {
-      color: #0d47a1;
-      margin-bottom: 1rem;
-    }
-    p {
-      margin-bottom: 1rem;
-    }
-    ul, ol {
-      margin-left: 1.5rem;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .cta a {
-      display: inline-block;
-      background: #0d47a1;
-      color: #fff;
-      padding: 1rem 2rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .cta a:hover {
-      background: #1565c0;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-      border-radius: 8px;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    /* Animaciones */
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .visible {
-      animation: fadeInUp 1s ease forwards;
-    }
+    body {font-family:'Segoe UI',Arial,sans-serif;margin:0;padding:0;background:#f9f9f9;color:#222;}
+    header {background:linear-gradient(135deg,#0d47a1,#1976d2);color:#fff;padding:3rem 2rem;text-align:center;}
+    section {max-width:900px;margin:2rem auto;padding:2rem;background:#fff;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.1);
+             opacity:0;transform:translateY(40px);transition:opacity 0.6s ease,transform 0.6s ease;}
+    section.visible {opacity:1;transform:translateY(0);animation:fadeInUp 0.8s ease forwards;}
+    h2 {color:#0d47a1;margin-bottom:1rem;border-left:4px solid #1976d2;padding-left:0.5rem;}
+    .cta {text-align:center;margin-top:2rem;}
+    .cta a {display:inline-block;background:linear-gradient(135deg,#0d47a1,#1976d2);color:#fff;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:bold;font-size:1.1rem;box-shadow:0 4px 12px rgba(0,0,0,0.2);}
+    .cta a:hover {transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,0.3);}
+    .video-container {max-width:900px;margin:2rem auto;border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,0.2);}
+    .video-container iframe {width:100%;height:500px;border:0;}
+    @keyframes fadeInUp {from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>¿Tu web vende, pero no escala?</h1>
-    <p>Descubre cómo transformar tu página en un canal estable de clientes.</p>
-  </header>
+<header>
+  <h1>¿Tu web vende, pero no escala?</h1>
+  <p>Descubre cómo transformar tu página en un canal estable de clientes.</p>
+  <div class="cta"><a href="https://api.leadconnectorhq.com/widget/booking/atk9MyQ0ar5I3bvfqOFr" target="_blank">Agendar Auditoría</a></div>
+</header>
 
-  <section>
-    <h2>Apertura</h2>
-    <p>Si ya tienes página web, pero las ventas no crecen como deberían… probablemente el problema no es tu negocio. El problema es que tu web no está apareciendo donde debería.</p>
-  </section>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/_ewwO0Y1zb4" title="YouTube video player" allowfullscreen></iframe>
+</div>
 
-  <section>
-    <h2>Validación del Contexto</h2>
-    <p>Ya invertiste en anuncios. Tu web genera ventas, pero no escala. Hay meses buenos y meses malos. Y en el fondo, sientes que tu página podría rendir mucho más… pero no tienes control real sobre tu flujo de clientes.</p>
-  </section>
+<section><h2>Apertura</h2><p>Si ya tienes página web, pero las ventas no crecen como deberían… probablemente el problema no es tu negocio.</p>
+<div class="cta"><a href="https://api.leadconnectorhq.com/widget/booking/atk9MyQ0ar5I3bvfqOFr" target="_blank">Agendar Auditoría</a></div></section>
 
-  <section>
-    <h2>El Problema Real</h2>
-    <p>El problema no es tu producto ni tu servicio. El problema es que tu web no está apareciendo en las búsquedas clave. Tus clientes ya están buscando lo que vendes, pero tu página no está alineada con cómo buscan ellos. Y mientras tanto, sigues compitiendo pagando anuncios… en vez de posicionarte.</p>
-  </section>
+<section><h2>Validación del Contexto</h2><p>Ya invertiste en anuncios. Tu web genera ventas, pero no escala. Hay meses buenos y meses malos. Y en el fondo, sientes que tu página podría rendir mucho más… pero no tienes control real sobre tu flujo de clientes.</p>
+<div class="cta"><a href="https://api.leadconnectorhq.com/widget/booking/atk9MyQ0ar5I3bvfqOFr" target="_blank">Agendar Auditoría</a></div></section>
 
-  <section>
-    <h2>Cambio de Perspectiva</h2>
-    <p>No se trata de traer más tráfico. Se trata de aparecer justo en el momento en que alguien ya quiere comprar.</p>
-  </section>
+<section><h2>El Problema Real</h2><p>No estás apareciendo en búsquedas clave. Tu web no está alineada con cómo buscan los clientes. Estás compitiendo pagando, no posicionándote.</p></section>
 
-  <section>
-    <h2>Derribando Creencias sobre SEO</h2>
-    <ul>
-      <li><strong>SEO no es solo palabras clave:</strong> Parte entendiendo cómo busca el cliente correcto y cómo está estructurada tu web.</li>
-      <li><strong>SEO no es traer más tráfico:</strong> No me interesa llenarte la web de visitas vacías. Me interesa que llegue gente que realmente está buscando lo que vendes.</li>
-      <li><strong>Si no es rápido, no sirve:</strong> El SEO construye una base que se fortalece con el tiempo.</li>
-      <li><strong>Más tráfico ≠ más ventas:</strong> Hay webs con mucho tráfico y pocas ventas, y otras con menos tráfico pero búsquedas precisas que convierten mejor.</li>
-    </ul>
-  </section>
+<section><h2>Cambio de Perspectiva</h2><p>No se trata de traer más tráfico… se trata de aparecer cuando alguien ya quiere comprar.</p></section>
 
-  <section>
-    <h2>SEO como Proceso</h2>
-    <p>No trabajamos el SEO como tareas sueltas. Lo trabajamos como un proceso:</p>
-    <ol>
-      <li>Entendemos cómo te busca la gente correcta.</li>
-      <li>Identificamos qué páginas tienen potencial real.</li>
-      <li>Optimizamos estructura, contenido e intención.</li>
-      <li>Construimos visibilidad con sentido.</li>
-    </ol>
-  </section>
+<section><h2>Derribando Creencias sobre SEO</h2>
+<ul>
+  <li><strong>SEO no es solo palabras clave:</strong> Parte entendiendo cómo busca el cliente correcto y cómo está estructurada tu web.</li>
+  <li><strong>SEO no es traer más tráfico:</strong> Me interesa que llegue gente que realmente está buscando lo que vendes.</li>
+  <li><strong>Si no es rápido, no sirve:</strong> El SEO construye una base que se fortalece con el tiempo.</li>
+  <li><strong>Más tráfico ≠ más ventas:</strong> Hay webs con mucho tráfico y pocas ventas, y otras con menos tráfico pero búsquedas precisas que convierten mejor.</li>
+</ul>
+<div class="cta"><a href="https://api.leadconnectorhq.com/widget/booking/atk9MyQ0ar5I3bvfqOFr" target="_blank">Agendar Auditoría</a></div></section>
 
-  <section>
-    <h2>Métricas</h2>
-    <p>Las métricas importan, pero no para inflar números. Importan como señal de que tu web empieza a aparecer mejor, atraer búsquedas más alineadas y ganar terreno en Google. Lo que buscamos es avance real.</p>
-  </section>
+<section><h2>SEO como Proceso</h2><p>Nosotros no trabajamos el SEO como tareas sueltas. Lo trabajamos como un proceso:</p>
+<ol><li>Entendemos cómo te busca la gente correcta.</li><li>Identificamos qué páginas tienen potencial real.</li><li>Optimizamos estructura, contenido e intención.</li><li>Construimos visibilidad con sentido.</li></ol></section>
 
-  <section>
-    <h2>Ventaja Estratégica</h2>
-    <p>El SEO es una estrategia de mediano y largo plazo. Requiere meses de trabajo, pero es acumulativa. Y como la mayoría evita hacerlo bien, la competencia real es mucho menor.</p>
-  </section>
+<section><h2>Métricas</h2><p>Las métricas importan, pero como señal de que la web está empezando a aparecer mejor, atraer búsquedas más alineadas y ganar terreno en Google. No buscamos inflar números, buscamos avance real.</p></section>
 
-  <section>
-    <h2>Expectativas Reales</h2>
-    <p>No es inmediato. Las primeras señales aparecen entre 30 y 60 días. Los resultados más sólidos llegan con meses de consistencia. Es un proceso, no un truco rápido.</p>
-  </section>
+<section><h2>Ventaja Estratégica</h2><p>El SEO es una estrategia de mediano/largo plazo. Requiere meses de trabajo, es acumulativa y como la mayoría evita hacerlo bien, la competencia real es menor.</p></section>
 
-  <section>
-    <h2>Micro-Evidencia</h2>
-    <p>Ecommerce que pasan de depender de anuncios a generar tráfico constante desde Google.</p>
-    <p>Negocios de servicios que empiezan a recibir contactos sin invertir todos los días en publicidad.</p>
-    <p>Casos donde el tráfico orgánico se convierte en el canal más rentable.</p>
-  </section>
+<section><h2>Expectativas Reales</h2><p>No es inmediato. Primeras señales: 30–60 días. Resultados más sólidos: meses. Requiere consistencia.</p></section>
 
-  <section>
-    <h2>Filtro de Cliente</h2>
-    <p>Esto no es para quien no vende. No es para quien busca resultados rápidos. Es para negocios que ya están vendiendo y quieren escalar con un canal estable.</p>
-  </section>
+<section><h2>Micro-Evidencia</h2><p>Ecommerce que pasan de depender de anuncios a generar tráfico constante desde Google.</p><p>Negocios de servicios que empiezan a recibir contactos sin invertir todos los días en publicidad.</p><p>Casos donde el tráfico orgánico se vuelve el canal más rentable.</p></section>
 
-  <section>
-    <h2>Video Explicativo</h2>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/_ewwO0Y1zb4" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-      </iframe>
-    </div>
-  </section>
+<section><h2>Filtro de Cliente</h2><p>No es para quien no vende. No es para quien busca resultados rápidos. Es para negocios que ya están vendiendo y quieren escalar con un canal estable.</p></section>
 
-  <section class="cta">
-    <h2>Agenda tu Auditoría SEO</h2>
-    <p>Si quieres ver si esto aplica a tu web, puedes agendar una auditoría SEO. Revisamos tu caso y vemos si tiene sentido trabajar esto.</p>
-    <a href="/auditoria-seo">Agendar Auditoría</a>
-  </section>
+<section class="cta"><h2>Agenda tu Auditoría SEO</h2><p>Si quieres ver si esto aplica a tu web, puedes agendar una auditoría SEO. Revisamos tu caso y vemos si tiene sentido trabajar esto.</p>
+<a href="https://api.leadconnectorhq.com/widget/booking/atk9MyQ0ar5I3bvfqOFr" target="_blank">Agendar Auditoría</a></section>
 
-  <script>
-    // Scroll reveal simple
-    const sections = document.querySelectorAll("section");
-    const revealOnScroll = () => {
-      const triggerBottom = window.innerHeight * 0.85;
-      sections.forEach(sec => {
-        const boxTop = sec.getBoundingClientRect().top;
-        if(boxTop < triggerBottom){
-          sec.classList.add("visible");
-        }
-      });
-    };
-    window.addEventListener("scroll", revealOnScroll);
-    window.addEventListener("load", revealOnScroll);
-  </script>
+<script>
+  const sections = document.querySelectorAll("section");
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const boxTop = section.getBoundingClientRect().top;
+      if (boxTop < triggerBottom) {
+        section.classList.add("visible");
+      }
+    });
+  };
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
 
 </body>
 </html>
